@@ -3,11 +3,11 @@
     angular
         .module('MainApp')
         .config(function ($stateProvider, $urlRouterProvider) {
-            $urlRouterProvider.otherwise("/home");
+            $urlRouterProvider.otherwise("/table");
             $stateProvider
-              .state('home', {
-                  url: "/home",
-                  templateUrl: "templates/home.template.html"
+              .state('table', {
+                  url: "/table",
+                  templateUrl: "templates/table.template.html"
               });
         });
 })(window.angular);

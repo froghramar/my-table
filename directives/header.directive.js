@@ -2,9 +2,9 @@
     'use strict';
     angular
         .module('MainApp')
-        .directive('footer', function () {
+        .directive('header', function () {
             return {
-                templateUrl: 'templates/footer.template.html'
+                templateUrl: 'templates/header.template.html'
             };
         });
 })(window.angular);
