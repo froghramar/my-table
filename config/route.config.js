@@ -7,7 +7,9 @@
             $stateProvider
               .state('table', {
                   url: "/table",
-                  templateUrl: "templates/table.template.html"
+                  templateUrl: "templates/table.template.html",
+                  controller: 'tableController',
+                  controllerAs : 'vm'
               });
         });
 })(window.angular);

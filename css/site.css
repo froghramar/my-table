@@ -4,6 +4,10 @@
     max-width: 1200px;
 }
 
+main {
+    margin: 50px 10px;
+}
+
 header, footer{
     background-color: #ccc;
 }
