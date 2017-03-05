@@ -3,10 +3,19 @@
     angular
         .module('MainApp')
         .factory('repositoryFactory', factory);
+
     function factory() {
 
         var data;
         var columns;
+
+        function getData() {
+            return data;
+        }
+
+        function getColumns() {
+            return columns;
+        }
 
         function updateDataToLocalStorage() {
             localStorage.setItem('data', JSON.stringify(data));
@@ -63,7 +72,8 @@
         initialize();
         
         return {
-            
-        }
+            getData: getData,
+            getColumns: getColumns
+        };
     }
 })(window.angular);

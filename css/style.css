@@ -1,0 +1,8 @@
+﻿table {
+    width: 100%;
+    border: 1px solid black;
+}
+
+table > thead > tr > td {
+   font-weight: bold;
+}
